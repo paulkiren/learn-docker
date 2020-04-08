@@ -17,7 +17,7 @@ services:
     # in this case  map port 3000 exposed by create react app to also 3000
     # to be used to access the container from the outside
     ports:
-      - "3000:3000"
+      - "80:3000"
     # the mounted volumes (folders which are outside docker but being used by docker)
     volumes:
       - "./client-website:/app"
